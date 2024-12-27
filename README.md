@@ -61,7 +61,7 @@ Below is the rule of the json:
 	1 . Should contain 'operation_number' , 'operation_oppsite' , 'operation_last_direction' , 'choose_chess_locate' .
 	2 . Should contain 'all_locate' or 'game' , but shouldn't contain all of them .
 	3 . 'all_locate' should be a string directly converted from a list which contains 12 lists which contain 12 numbers -1 , 0 or 1 . 
-	4 . The other should be a string directly converted from the variables above .
+	4 . The other should be a string directly converted from the variables above . Check that they are confirm the rule .
 
 以下是json字符串规范：
 	1 必须包含键“operation_number”，“operation_oppsite”，“operation_last_direction”，“choose_chess_locate”。
@@ -84,11 +84,11 @@ Below is the rule of the game 'locked chess' :
 		-- -- -- -- -- -- -- -- -- -- -- --
 		-- -- -- -- -- -- -- -- -- -- -- --
 	2 . Black first . Two player take turns , and each operation should be divided into the following 5 steps :
-		① . Choose a direction from 'up' , 'down' , 'left' , 'right' to move all of the operater's chesses . 
-		② . Choose a direction that perpendicular to the last direction chosen to move all of the operater's chesses . 
+		① . Choose a direction from 'up' , 'down' , 'left' , 'right' to move all of the operater's chesses one square . 
+		② . Choose a direction that perpendicular to the last direction chosen to move all of the operater's chesses one square . 
 		③ . Choose one operater's  chess .
-		④ . Choose a direction from 'up' , 'down' , 'left' , 'right' to move the chosen chess .
-		⑤ . Choose a direction that perpendicular to the last direction chosen to move the chosen chess .
+		④ . Choose a direction from 'up' , 'down' , 'left' , 'right' to move the chosen chess one square .
+		⑤ . Choose a direction that perpendicular to the last direction chosen to move the chosen chess one square .
 	3 . When moving , the chesses shouldn't be moved to the other chesses'position or be out of the board .
 	4 . When the operater now can't take any operations , the other win .
 
