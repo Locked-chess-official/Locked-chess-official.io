@@ -49,6 +49,7 @@ Below is the rule of the game 'locked chess' :
 		⑤ . Choose a direction that perpendicular to the last direction chosen to move the chosen chess .
 	3 . When moving , the chesses shouldn't be moved to the other chesses'position or be out of the board .
 	4 . When the operater now can't take any operations , the other win .
- How to use?
- Move the folder to 'path\to\your\python\python3\Lib\site-packages' . Be sure that the version of the python should above 3.8 .
+ 
+How to use?
+Move the folder to 'path\to\your\python\python3\Lib\site-packages' . Be sure that the version of the python should above 3.8 .
 </pre>
