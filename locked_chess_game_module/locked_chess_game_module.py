@@ -168,9 +168,9 @@ def legal_operation():
                     wloa['l']=False
             else:
                 if i[1]==1:
-                        wloa['u']=False
+                    wloa['u']=False
                 if i[1]==12:
-                        wloa['d']=False
+                    wloa['d']=False
                 if i[0]==1:
                     wloa['l']=False
                 if i[0]==12:
