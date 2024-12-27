@@ -1,4 +1,4 @@
-<pre style="white-space:pre-wrap;max-width:80ch;">
+<pre style="white-space: pre-wrap;max-width: 80ch;">
 Below are the global variables that locked_chess_game_module.py defined:
 	game --all of the chesses'location and belonging
 	operation_number --the number of steps taken by the current operation
