@@ -15,6 +15,7 @@ Below are the functions that locked_chess_game_module.py defined:
 	return_game() --return a json string that describes the game statement .
 	loads_game(x) --translate the json string 'x' . 
 	(Warning : If 'x' does not compile the rule , it will raise an Exception and delete all of the global variables . It means that you need to start a new game .)
+	main() --a function that use 'tkinter' to play this game .
 
 Below is the rule of the variables:
 	1 . Variable 'game' must be a set , and what is in the set must be a tuple whose length is 3 .
