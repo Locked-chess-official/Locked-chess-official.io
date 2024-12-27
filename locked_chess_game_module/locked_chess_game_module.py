@@ -475,12 +475,6 @@ def main():
         else:
             all_game_information.config(justify=tkinter.LEFT,text='全部黑棋坐标:{}\n全部白棋坐标:{}\n当前操作方:{}\n当前操作步数:{}\n上步全部可能操作(仅当前操作步数为2或5时显示，其它时候显示“无”):{}\n当前全部操作:{}\n当前选择棋子坐标(仅当前操作为4或5时显示，其它时候显示“无”):{}'.format(''.join([str((i[0],i[1])) for i in game if i[-1]=='黑']),''.join([str((i[0],i[1])) for i in game if i[-1]=='白']),operation_oppsite,operation_number,operation_last_direction,'{}方已经失败'.format(operation_oppsite),''.join([str((choose_chess_locate[0],choose_chess_locate[1])) if operation_number in (4,5) else '无'])))
     def start_game():
-        global game
-        global operation_number
-        global operation_oppsite
-        global operation_last_direction
-        global all_operation
-        global choose_chess_locate
         a=operation_number                    
         game_start()
         normal_chess()
