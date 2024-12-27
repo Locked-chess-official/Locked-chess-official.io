@@ -30,7 +30,8 @@ Below is the rule of the variables:
 Below is the rule of the json:
 	1 . Should contain 'operation_number' , 'operation_oppsite' , 'operation_last_direction' , 'choose_chess_locate' .
 	2 . Should contain 'all_locate' or 'game' , but shouldn't contain all of them .
-	3 . 'all_locate' should be a string directly converted from a list which contains 12 lists which contain 12 numbers -1 , 0 or 1 . The other should be a string directly converted from the variables above .
+	3 . 'all_locate' should be a string directly converted from a list which contains 12 lists which contain 12 numbers -1 , 0 or 1 . 
+	4 . The other should be a string directly converted from the variables above .
 
 Below is the rule of the game 'locked chess' :
 	1 . It is the beginning of the game :
