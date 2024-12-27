@@ -1,4 +1,4 @@
-Below are the global variables that locked_chess_game_module.py defined:
+Below are the global variables that locked_chess_game_module.py defined:\n
 	game --all of the chesses'location and belonging
 	operation_number --the number of steps taken by the current operation
 	operation_oppsite --who is currently operating
