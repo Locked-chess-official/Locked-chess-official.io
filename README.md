@@ -1,3 +1,4 @@
+<pre>
 Below are the global variables that locked_chess_game_module.py defined:
 	game --all of the chesses'location and belonging
 	operation_number --the number of steps taken by the current operation
@@ -50,3 +51,4 @@ Below is the rule of the game 'locked chess' :
 	4 . When the operater now can't take any operations , the other win .
  How to use?
  Move the folder to 'path\to\your\python\python3\Lib\site-packages' . Be sure that the version of the python should above 3.8
+</pre>
