@@ -551,14 +551,7 @@ def main():
         move.acquire()
         move.notify()
         move.release()
-    hid_and_nor=threading.Condition()
     def legal_button():
-        global game
-        global operation_number
-        global operation_oppsite
-        global operation_last_direction
-        global all_operation
-        global choose_chess_locate
         while is_open:
             move.acquire()
             move.wait()
