@@ -9,14 +9,19 @@ Below are the global variables that locked_chess_game_module.py defined:
 
 Below are the functions that locked_chess_game_module.py defined:
 	game_start() --start a new game
-	legal_operation() --return all_operation . If there is no operation that comply with the rule , return 'fail' . (Warning : if the variables do not all conform to the rule , this function will delete all of the variables above and raise an Exception . It means that you need to start a new game .)
+	legal_operation() --return all_operation . If there is no operation that comply with the rule , return 'fail' . 
+	(Warning : if the variables do not all conform to the rule , this function will delete all of the variables above and raise an Exception . It means that you need to start a new game .)
 	operation(x) --do the operation 'x' . If 'x' is not in all_operation or the game is over , it will raise an Exception .
 	return_game() --return a json string that describes the game statement .
-	loads_game(x) --translate the json string 'x' . (Warning : If 'x' does not compile the rule , it will raise an Exception and delete all of the global variables . It means that you need to start a new game .)
+	loads_game(x) --translate the json string 'x' . 
+	(Warning : If 'x' does not compile the rule , it will raise an Exception and delete all of the global variables . It means that you need to start a new game .)
 
 Below is the rule of the variables:
 	1 . Variable 'game' must be a set , and what is in the set must be a tuple whose length is 3 .
-	2 . The tuples above must be (int_1,int_2,'黑') or (int_1,int_2,'白') . The int_1 and int_2 should between 1 to 12 (contain 1 and 12) . The number of the tuples whose last element is '黑' and those whose last element is '白' should be greater than or equal to 3 . Different tuples shouldn't have the same int_1 and same int_2 at the same time .
+	2 . The tuples above must be (int_1,int_2,'黑') or (int_1,int_2,'白') . 
+		①The int_1 and int_2 should between 1 to 12 (contain 1 and 12) . 
+		②The number of the tuples whose last element is '黑' and those whose last element is '白' should be greater than or equal to 3 . 
+		③Different tuples shouldn't have the same int_1 and same int_2 at the same time .
 	3 . 'operation_oppsite' can only be '黑' or '白' .
 	4 . 'operation_number' can only be 1 , 2 , 3 , 4 or 5 .
 	5 . If operation_number is 2 or 5 , variable 'operation_last_direction' can only be '上下' or '左右' . Else variable 'operation_last_direction' can only be '无' .
