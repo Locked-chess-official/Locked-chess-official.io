@@ -116,8 +116,8 @@ Below is the rule of the game 'locked chess' :
 	4 当前操作者如果不能进行任何操作，另一方获胜。
 	
 How to use?
-Move the folder to 'path\to\your\python\python3\Lib\site-packages' . Be sure that the version of the python is above 3.8 .
+Move the folder to 'path\to\your\python\python3\Lib\site-packages' (replace with actual location) . Be sure that the version of the python is above 3.8 .
 
 如何使用？
-把文件夹移动到'path\to\your\python\python3\Lib\site-packages'中，注意确保python版本在3.8以上。
+把文件夹移动到'path\to\your\python\python3\Lib\site-packages'中(替换为实际位置)，注意确保python版本在3.8以上。
 </pre>
