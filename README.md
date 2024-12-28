@@ -11,7 +11,7 @@ Below are the global variables that locked_chess_game_module.py defined:
 	game --所有黑棋与白棋位置
 	operation_number --当前操作进行到的步数
 	operation_oppsite --当前操作方
-	operation_last_direction --上一步可能的操作。如果operation的值为1、3或者4，这个变量的值为“无”
+	operation_last_direction --上一步可能的操作。如果operation_number的值为1、3或者4，这个变量的值为“无”
 	choose_chess_locate --当前选择的棋子。若operation_number的值为1、2或者3，这个变量的值为“无“
 	all_operation --当前全部符合规则的操作
 	
