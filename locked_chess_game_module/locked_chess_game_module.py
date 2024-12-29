@@ -355,8 +355,8 @@ def return_game():
             'operation_number':operation_number,
             'operation_oppsite':operation_oppsite,
             'operation_last_direction':operation_last_direction,
-            'choose_chess_locate':choose_chess_locate,
-            'all_operation':all_operation
+            'choose_chess_locate':str(choose_chess_locate),
+            'all_operation':str(all_operation)
                 }        
 
     return json.dumps(a,sort_keys=True)
