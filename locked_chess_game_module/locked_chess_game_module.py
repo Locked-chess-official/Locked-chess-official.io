@@ -309,7 +309,6 @@ def operation(x):
             operation_last_direction='左右'
         else:
             operation_last_direction='无'
-    gamestart=True
     legal_operation()
     if legal_operation()=='fail':
         if __name__=='__main__':
