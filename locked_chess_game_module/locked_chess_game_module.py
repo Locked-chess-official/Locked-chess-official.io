@@ -443,7 +443,7 @@ def loads_game(x):
         legal_json=False
         error=str(e)
     if not legal_json:
-        m='raise ValueError("Wrong json : {}.")'.format(error)
+        m='raise ValueError("Wrong json : {} Please check your input.")'.format("'"+error+"'")
         exec(m)
     
     
