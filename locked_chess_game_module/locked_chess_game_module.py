@@ -407,9 +407,12 @@ def loads_game(x):
             del game
         else:
             if 'all_locate' in all_information.keys():                
-                try:
-                    all_locate=eval(all_information['all_locate'])
+                try:           
+                    if len(all_locate:=eval(all_information['all_locate']))!=12:
+                        raise Exception
                     for i1 in range(12):
+                        if len(all_locate[i1])!=12:
+                            raise Exception
                         for i2 in range(12):
                             if all_locate[i1][i2]==1:
                                 game.add((i2+1,i1+1,'黑'))
