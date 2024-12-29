@@ -435,7 +435,7 @@ def loads_game(x):
         legal_operation()
     except Exception as e:
         legal_json=False
-        error=e
+        error=str(e)
     if not legal_json:
         m='raise ValueError("Wrong json : {}.")'.format(error)
         exec(m)
