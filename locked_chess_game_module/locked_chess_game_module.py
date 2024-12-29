@@ -421,16 +421,22 @@ def loads_game(x):
                             elif all_locate[i1][i2]==0:
                                 pass
                             else:
-                                del all_operation
-                                del choose_chess_locate
-                                del operation_number
-                                del operation_oppsite
-                                del game
                                 raise Exception
                 except Exception:
-                    pass
+                    del all_operation
+                    del choose_chess_locate
+                    del operation_number
+                    del operation_oppsite
+                    del game
             else:
-                game=eval(all_information['game'])
+                try:
+                    game=eval(all_information['game'])
+                except Exception:
+                    del all_operation
+                    del choose_chess_locate
+                    del operation_number
+                    del operation_oppsite
+                    del game
     try:
         legal_operation()
     except Exception as e:
