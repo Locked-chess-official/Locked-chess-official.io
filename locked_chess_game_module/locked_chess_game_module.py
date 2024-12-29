@@ -377,7 +377,22 @@ def loads_game(x):
         choose_chess_locate=eval(all_information['choose_chess_locate'])
         game=set()
     except Exception:
-        pass
+        try:
+            del choose_chess_locate
+        except Exception:
+            pass
+        try:
+            del operation_number
+        except Exception:
+            pass
+        try:
+            del operation_oppsite
+        except Exception:
+            pass
+        try:
+            del game
+        except Exception:
+            pass
     else:
         if 'all_locate' not in all_information.keys() and 'game' not in all_information.keys():
             del all_operation
@@ -416,10 +431,11 @@ def loads_game(x):
                 game=eval(all_information['game'])
     try:
         legal_operation()
-    except Exception:
+    except Exception as e:
         legal_json=False
+        error=e
     if not legal_json:
-        m='raise ValueError("Wrong json .")'
+        m='raise ValueError("Wrong json : {}.")'.format(error)
         exec(m)
     
     
