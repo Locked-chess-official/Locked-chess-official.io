@@ -29,4 +29,11 @@ This is the translate in the function "main()" :
   "撤回":"withdraw"
 }
   (No translation in rule . It has translated in README.md .)
+
+Below is the operation option:
+  1.You can only click "↑" , "↓" , "←" , "→" to move the chesses because you may do the wrong operations if you use keyboard .
+  2.You need to click the chess in the board to choose this chess .It will be constantly displayed and hidden then .
+  3.You can withdraw only when the operation_number is 4 .
+  4.Cilcking "开始" will start a new game even if the recent game is not over .
+  5.Clicking "返回" will destroy the tkinter .
 </pre>
