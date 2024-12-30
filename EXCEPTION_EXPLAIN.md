@@ -52,5 +52,26 @@ Below is all of the exceptions you can see and defined by locked_chess_game_modu
 
     It means that the number of the tuple whose last element is "黑" and the number of the tuple whose last element is "白" are not all equal or greater to 3 .
     这意味着最后一个元素为“黑”的元组数量与最后一个元素为“白”的元组数量不都大于等于3。
+
+    `ValueError:The value of 'operation_number' should be in '(1,2,3,4,5)' .`
+    `ValueError:The value of 'example.operation_number' if you use 'import locked_chess_game_module as example' or 'operation_number' if you use 'from locked_chess_game_module import *' should be in '(1,2,3,4,5)' .`
+
+    It means that you assign a value which is not in (1,2,3,4,5) to the variable "operation_number" .
+    这意味着你给变量operation_number赋予了一个不在1，2，3，4，5中的值
+
+    `ValueError:The value of 'operation_oppsite' should be in '('黑','白')' .`
+    `ValueError:The value of 'example.operation_oppsite' if you use 'import locked_chess_game_module as example' or 'operation_oppsite' if you use 'from locked_chess_game_module import *' should be in '('黑','白')' .`
+
+    It means that you assign a value which is not in ('黑','白') to the variable "operation_oppsite" .
+    这意味着你给变量operation_oppsite赋予了不是“黑”或“白”的值。
+    
+    `ValueError:The value of 'operation_last_direction' is illegal .`
+    `ValueError:The value of 'example.operation_last_direction' if you use 'import locked_chess_game_module as example' or 'operation_last_direction' if you use 'from locked_chess_game_module import *' is illegal .`
+
+    It means that you assign a value which is not in ("上下","左右") if operation_number in (2,5) or not "无" else to the variable "operation_last_direction" .
+    这意味着你给变量operation_last_direction在operation_number为2或5时赋予了不为“上下”或“左右”的值或在其它情况下赋予了不为“无”的值。
+
+    
+    
   
 </pre>
