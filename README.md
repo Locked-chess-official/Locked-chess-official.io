@@ -120,4 +120,7 @@ Move the folder to 'path\to\your\python\python3\Lib\site-packages' (replace with
 
 如何使用？
 把文件夹移动到'path\to\your\python\python3\Lib\site-packages'中(替换为实际位置)，注意确保python版本在3.8以上。
+
+You can see how to deal with the Exceptions in [Exception explain](EXCEPTION_EXPLAIN.md) .
+你可以在[错误说明](EXCEPTION_EXPLAIN.md)中看如何处理错误。
 </pre>
