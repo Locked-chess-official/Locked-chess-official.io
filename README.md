@@ -60,13 +60,13 @@ Below is the rule of the variables:
 Below is the rule of the json:
 	1 . Should contain 'operation_number' , 'operation_oppsite' , 'operation_last_direction' , 'choose_chess_locate' .
 	2 . Should contain 'all_locate' or 'game' , but shouldn't contain all of them .
-	3 . 'all_locate' should be a string directly converted from a list which contains 12 lists which contain 12 numbers -1 , 0 or 1 . 
+	3 . 'all_locate' should be a string directly converted from a list which contains 12 lists which contain 12 numbers -1 , 0 or 1 . 'operation_number' should be a int in (1,2,3,4,5) .
 	4 . The other should be a string directly converted from the variables above . Check that they are confirm the rule .
 
 以下是json字符串规范：
 	1 必须包含键“operation_number”，“operation_oppsite”，“operation_last_direction”，“choose_chess_locate”。
 	2 必须包含键“all_locate”或者“game”，但不能同时包含。
-	3 键“all_locate”的值必须是一个由列表直接转变的字符串，该列表包含12个列表，每个列表包含12个数字，这些数字只能是0，1，-1
+	3 键“all_locate”的值必须是一个由列表直接转变的字符串，该列表包含12个列表，每个列表包含12个数字，这些数字只能是0，1，-1。键“operation_number”的值必须是在1、2、3、4、5中的整数
 	4 其它键的值为对应变量变成的字符串，注意这些变量必须符合规范。
 
 Below is the rule of the game 'locked chess' :
