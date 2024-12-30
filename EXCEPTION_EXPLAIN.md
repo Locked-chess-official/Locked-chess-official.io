@@ -71,7 +71,32 @@ Below is all of the exceptions you can see and defined by locked_chess_game_modu
     It means that you assign a value which is not in ("上下","左右") if operation_number in (2,5) or not "无" else to the variable "operation_last_direction" .
     这意味着你给变量operation_last_direction在operation_number为2或5时赋予了不为“上下”或“左右”的值或在其它情况下赋予了不为“无”的值。
 
-    
+    `ValueError:The value of 'choose_chess_locate' is illegal .`
+    `ValueError:The value of 'example.choose_chess_locate' if you use 'import locked_chess_game_module as example' or 'choose_chess_locate' if you use 'from locked_chess_game_module import *' is illegal .`
+
+    It means that you assign a value which is not in set "game" if operation_number in (4,5) or not "无" else to the variable "operation_last_direction" .
+    这意味着你给变量operation_last_direction在operation_number为4或5时赋予了不为集合game中元素的值或在其它情况下赋予了不为“无”的值。
+
+  operation(x):     --You maybe see the Exception above because this function needs to call "legal_operation()" . 
+                    --你可能看到上面的异常因为该函数需要使用legal_operation()。
+
+    `IllegalOperationError:Operation 'example' is not in list 'all_operation' .Please check your operation .`
+    `IllegalOperationError:Operation 'example' is not in list 'example.all_operation' if you use 'import locked_chess_game_module as example' or 'all_operation' if you use 'from locked_chess_game_module import *' .Please check your operation .`
+
+    It means that you are trying to take an operation which is not in the list "all_operation" . It can only take the operation which is in the list "all_operation" .
+    这意味着你正在尝试进行一个列表all_operation中没有的操作。这个函数只能执行在列表all_operation中的操作。
+
+    `GameFailedError:The game is over ,and operatior 'example' has failed .Please start a new game with 'game_start()' .`
+    `GameFailedError:The game is over ,and operatior 'example' has failed .Please start a new game with 'example.game_start()' if you use 'import locked_chess_game_module as example' or 'game_start()' if you use 'from locked_chess_game_module import *' .`
+
+    It means that now there is no operation you can take (you failed). You can only start a new game .
+    这意味着目前你没有操作（你已经失败了）。你只能开始一个新的操作。
+
+  loads_game():
+    `ValueError:Wrong json . 'example_sentence.' Please check your input . `
+
+    The "example_sentence" is in the Exception in "legal_operation()" . It can help you to current the mistake in the json .
+    其中“example_sentence”是在legal_operation()中的报错，可以帮你改正json中的错误。
     
   
 </pre>
