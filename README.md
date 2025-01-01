@@ -34,7 +34,10 @@ Below are the functions that locked_chess_game_module.py defined:
 	loads_game(x) --将json字符串x翻译为棋局信息。
 	(警告：若x不符合规范，这个函数将删除全部上述全局变量并报错，这意味着你要开始新的一盘。)
 	main() --通过tkinter开始这个游戏。
-	
+
+In "locked_chess_game_class.py" , I package them in the class "LockedChessClass" except "main()" .
+在“locked_chess_game_class.py”中，我将除main()以外的函数与变量打包在了LockedChessClass中。
+
 Below is the rule of the variables:
 	1 . Variable 'game' must be a set , and what is in the set must be a tuple whose length is 3 .
 	2 . The tuples above must be (int_1,int_2,'黑') or (int_1,int_2,'白') . 
