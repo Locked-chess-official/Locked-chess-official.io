@@ -95,12 +95,12 @@ def legal_operation():
                 return ('002',"The value of 'operation_oppsite' should be in '('黑','白')' .")
             else:
                 return ('002',"The value of 'example.operation_oppsite' if you use 'import locked_chess_game_module as example' or 'operation_oppsite' if you use 'from locked_chess_game_module import *' should be in '('黑','白')' .")
-        if operation_number in (2,5) and operation_last_direction not in ('上下','左右') or (operation_number in (1,3,4) and operation_last_direction!='无'):
+        if (operation_number in (2,5) and operation_last_direction not in ('上下','左右')) or (operation_number in (1,3,4) and operation_last_direction!='无'):
             if __name__=='__main__':
                 return ('002',"The value of 'operation_last_direction' is illegal .")
             else:
                 return ('002',"The value of 'example.operation_last_direction' if you use 'import locked_chess_game_module as example' or 'operation_last_direction' if you use 'from locked_chess_game_module import *' is illegal .")    
-        if operation_number in (4,5) and choose_chess_locate not in game or (operation_number in (1,2,3) and choose_chess_locate!='无'):
+        if (operation_number in (4,5) and choose_chess_locate not in game) or (operation_number in (1,2,3) and choose_chess_locate!='无'):
             if __name__=='__main__':
                 return ('002',"The value of 'choose_chess_locate' is illegal .")
             else:
