@@ -86,8 +86,8 @@ Below is all of the exceptions you can see and defined by locked_chess_game_modu
     It means that you are trying to take an operation which is not in the list "all_operation" . It can only take the operation which is in the list "all_operation" .
     这意味着你正在尝试进行一个列表all_operation中没有的操作。这个函数只能执行在列表all_operation中的操作。
 
-    `GameFailedError:The game is over ,and operatior 'example' has failed .Please start a new game with 'game_start()' .`
-    `GameFailedError:The game is over ,and operatior 'example' has failed .Please start a new game with 'example.game_start()' if you use 'import locked_chess_game_module as example' or 'game_start()' if you use 'from locked_chess_game_module import *' .`
+    `GameIsOverError:The game is over ,and operatior 'example' has failed .Please start a new game with 'game_start()' .`
+    `GameIsOverError:The game is over ,and operatior 'example' has failed .Please start a new game with 'example.game_start()' if you use 'import locked_chess_game_module as example' or 'game_start()' if you use 'from locked_chess_game_module import *' .`
 
     It means that now there is no operation you can take (you failed). You can only start a new game .
     这意味着目前你没有操作（你已经失败了）。你只能开始一个新的操作。
