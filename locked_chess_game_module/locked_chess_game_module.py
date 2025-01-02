@@ -439,7 +439,8 @@ def loads_game(x):
             else:
                 try:
                     game=eval(all_information['game'])
-                except Exception:
+                except Exception as e2:
+                    error2+='but {}'.format(str(e2))
                     del all_operation
                     del choose_chess_locate
                     del operation_number
