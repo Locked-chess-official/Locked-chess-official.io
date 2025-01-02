@@ -1,4 +1,7 @@
 import sys
+from locked_chess_game_module import *
+from locked_chess_game_class import LockedChessClass
+
 
 major_version=sys.version_info.major
 minor_version=sys.version_info.minor
