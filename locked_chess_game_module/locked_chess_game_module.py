@@ -377,6 +377,8 @@ def loads_game(x):
         choose_chess_locate=eval(all_information['choose_chess_locate'])
         game=set()
     except Exception:
+        error1='operation_number ,operation_oppsite ,operation_last_direction ,choose_chess_locate are all exist and legal.'
+        error2=''
         try:
             del choose_chess_locate
         except Exception:
