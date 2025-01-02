@@ -253,7 +253,7 @@ def operation(x):
     class IllegalOperationError(Exception):
         pass
 
-    class GameFailError(Exception):
+    class GameIsOverError(Exception):
         pass
     global choose_chess_locate
     global operation_number
@@ -317,8 +317,8 @@ def operation(x):
             
         else:
             a="The game is over ,and operatior '{}' has failed .Please start a new game with 'example.game_start()' if you use 'import locked_chess_game_module as example' or 'game_start()' if you use 'from locked_chess_game_module import *'".format(operation_oppsite)
-        GameFail="raise GameFailError(a)"    
-        exec(GameFail)
+        gameisover="raise GameIsOverError(a)"    
+        exec(gameisover)
     elif x in all_operation:
         if operation_number in (1,2,4,5):
             exec('{}()'.format(x))
@@ -339,8 +339,8 @@ def operation(x):
             a="Operation '{}' is not in list 'all_operation' .Please check your operation .".format(x)            
         else:
             a="Operation '{}' is not in list 'example.all_operation' if you use 'import locked_chess_game_module as example' or 'all_operation' if you use 'from locked_chess_game_module import *' .Please check your operation .".format(x)
-        IllegalOperation="raise IllegalOperationError(a)"
-        exec(IllegalOperation)
+        illegaloperation="raise IllegalOperationError(a)"
+        exec(illegaloperation)
 def return_game():    
     legal_operation()
     state=[[0 for i in range(12)] for i in range(12)]
