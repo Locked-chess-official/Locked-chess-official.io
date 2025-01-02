@@ -95,8 +95,8 @@ Below is all of the exceptions you can see and defined by locked_chess_game_modu
   loads_game():
     `ValueError:Wrong json . 'example_sentence.' Please check your input . `
 
-    The "example_sentence" is in the Exception in "legal_operation()" . It can help you to current the mistake in the json .
-    其中“example_sentence”是在legal_operation()中的报错，可以帮你改正json中的错误。
+    The "example_sentence" is in the Exception in "legal_operation()" and the error above in this function . It can help you to current the mistake in the json .
+    其中“example_sentence”是在legal_operation()中的报错以及该函数上面的报错，可以帮你改正json中的错误。
     
   
 </pre>
