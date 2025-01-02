@@ -416,10 +416,10 @@ def loads_game(x):
             if 'all_locate' in all_information.keys():                
                 try:           
                     if len(all_locate:=eval(all_information['all_locate']))!=12:
-                        raise Exception
+                        raise Exception("length of key's value's eval whose name is  'all_locate' should be 12 .")
                     for i1 in range(12):
                         if len(all_locate[i1])!=12:
-                            raise Exception
+                            raise Exception("length of values in key's value's eval whose name is  'all_locate' should be 12 .")
                         for i2 in range(12):
                             if all_locate[i1][i2]==1:
                                 game.add((i2+1,i1+1,'黑'))
@@ -428,7 +428,7 @@ def loads_game(x):
                             elif all_locate[i1][i2]==0:
                                 pass
                             else:
-                                raise Exception
+                                raise Exception("values in key's value's eval whose name is  'all_locate' should be only in (-1,0,1)")
                 except Exception as e2:
                     error2+='but {}'.format(str(e2))
                     del all_operation
