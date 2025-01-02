@@ -367,6 +367,8 @@ def loads_game(x):
     global operation_oppsite
     global operation_last_direction
     global choose_chess_locate
+    error1='operation_number ,operation_oppsite ,operation_last_direction ,choose_chess_locate are all exist and legal.'
+    error2=''
     legal_json=True
     无='无'
     try:
@@ -376,9 +378,8 @@ def loads_game(x):
         operation_last_direction=all_information['operation_last_direction']
         choose_chess_locate=eval(all_information['choose_chess_locate'])
         game=set()
-    except Exception:
-        error1='operation_number ,operation_oppsite ,operation_last_direction ,choose_chess_locate are all exist and legal.'
-        error2=''
+    except Exception as e1:
+        error1=f'operation_number ,operation_oppsite ,operation_last_direction ,choose_chess_locate are not all exist and legal :{str(e1)}.'
         try:
             del choose_chess_locate
         except Exception:
@@ -397,18 +398,21 @@ def loads_game(x):
             pass
     else:
         if 'all_locate' not in all_information.keys() and 'game' not in all_information.keys():
+            error2="both key 'all_locate' and 'game' are not exist .It is illegal ."
             del all_operation
             del choose_chess_locate
             del operation_number
             del operation_oppsite
             del game
         elif 'all_locate' in all_information.keys() and 'game' in all_information.keys():
+            error2="both key 'all_locate' and 'game' are exist .It is illegal ."
             del all_operation
             del choose_chess_locate
             del operation_number
             del operation_oppsite
             del game
         else:
+            error2="only one key 'all_locate' and 'game' is exist .It is legal ."
             if 'all_locate' in all_information.keys():                
                 try:           
                     if len(all_locate:=eval(all_information['all_locate']))!=12:
@@ -425,7 +429,8 @@ def loads_game(x):
                                 pass
                             else:
                                 raise Exception
-                except Exception:
+                except Exception as e2:
+                    error2+='but {}'.format(str(e2))
                     del all_operation
                     del choose_chess_locate
                     del operation_number
@@ -444,7 +449,7 @@ def loads_game(x):
         legal_operation()
     except Exception as e:
         legal_json=False
-        error=str(e)
+        error=error1+' '+error2+' '+str(e)
     if not legal_json:
         m='raise ValueError("Wrong json : {} Please check your input.")'.format("'"+error+"'")
         exec(m)
