@@ -33,7 +33,14 @@ This is the translate in the function "main()" :
 Below is the operation option:
   1.You can only click "↑" , "↓" , "←" , "→" to move the chesses because you may do the wrong operations if you use keyboard .
   2.You need to click the chess in the board to choose this chess .It will be constantly displayed and hidden then .
-  3.You can withdraw only when the operation_number is 4 .
+  3.You can click "撤回" only when the operation_number is 4 .
   4.Cilcking "开始" will start a new game even if the recent game is not over .
   5.Clicking "返回" will destroy the tkinter .
+
+下面是操作说明：
+  1.你只能点击“↑”、“↓”、“←”、“→”来移动棋子因为通过键盘你可能做出错误的操作。
+  2.你需要点击棋子来选择它。它将开始不断闪烁。
+  3.你只能在operation_number为4时点击“撤回”。
+  4.无论何时点击“开始”都可用重新开始。
+  5.点击“返回”将关闭窗口。
 </pre>
