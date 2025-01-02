@@ -3,6 +3,7 @@ import tkinter
 import threading
 import time
 import sys
+from locked_chess_game_class import LockedChessClass
 def game_start():
     global game
     global operation_number
